@@ -1,0 +1,450 @@
+/* fonts */
+@font-face {
+    font-family: "helvetica-Roman";
+    src: url(../assets/fonts/HelveticaInseratLTStd-Roman.otf);
+}
+
+@font-face {
+    font-family: "helvetica-Thin";
+    src: url(../assets/fonts/Helvetica-Thin.otf);
+}
+
+@font-face {
+    font-family: "helvetica-Cond";
+    src: url(../assets/fonts/HelveticaLTStd-Cond.otf);
+}
+
+/* Selector universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+/* Navbar */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #575756;
+    padding: 10px;
+    border-bottom: 1px solid #FF99CC;
+}
+
+header div a img{
+    margin-left: 30px;
+}
+
+body header nav{
+    padding: 30px;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body{
+    background-color: #575756;
+    width: auto;
+}
+
+main{
+    background-image: url(../assets/backrounds/fondo-gris.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 1.5rem;
+}
+
+
+/* -- TITULOS --- */
+
+.main-title{
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "helvetica-Roman";
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+span{
+    color: #FF99CC;
+}
+
+.title__second--index{
+    margin-bottom: 1.5rem;
+    margin-left: 10px;
+    font-family: "helvetica-Cond";
+    font-size: 2.8rem;
+    color: #FF99CC;
+    text-align: center;
+}
+
+.title__second--servicios{
+    margin: 10px;
+    font-family: "helvetica-Cond";
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.third-title{
+    margin: 5px 5px;
+    font-family: "helvetica-Cond";
+    font-size: 1.5rem;
+    color:#FF99CC;
+    text-align: center;
+}
+
+.title__third--contacto{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-family: "helvetica-Cond";
+    font-size: 2rem;
+    color:#FF99CC;
+}
+
+/* --- INDEX --- */
+
+.proyectos__recientes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-bottom: 2rem;
+}
+
+.card-index{
+    padding: 5px;
+    margin: 5px 10px 12px 15px;
+    background-color: #222222;
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__image{
+    display: flex;
+    justify-content: center;
+}
+
+.card__image--index{
+    border-radius: 5px;
+}
+
+.card__description--index{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.slogan{
+    text-align: center;
+    font-family: helvetica-Thin;
+    font-size: larger;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card__image--index{
+    display: block;
+    margin: 12px 10px;
+}
+
+.proyectos__recientes div button{
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid #FF99CC;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.proyectos__recientes div button{
+    background-color: #FF99CC;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+
+/* --- FOOTER --- */
+
+footer{
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 15px 20px;
+    font-family: "helvetica-Roman";
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto__footer-mail, .texto__footer-telefono{
+    font-family: helvetica-Thin;
+}
+
+.texto__footer-mail{
+    margin-bottom: 0.3rem;
+    margin-top: 6px;
+}
+
+footer article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer article div{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+footer article div img{
+    margin: 1px 8px;
+}
+
+/* --- NOSOTROS --- */
+
+.section__nosotros{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-bottom: 2rem;
+}
+
+.card-nosotros{
+    padding: 5px;
+    margin: 5px 10px 12px 15px;
+    background-color: #222222;
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__description--nosotros{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* --- SERVICIOS --- */
+
+.section__servicios{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-bottom: 2rem;
+}
+
+
+.card-servicios{
+    padding: 5px;
+    margin: 5px 10px 12px 15px;
+    background-color: #222222;
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__description--servicios{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    }
+
+/* --- PROYECTOS --- */
+
+.section__proyectos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-bottom: 2rem;
+}
+
+.card-proyectos{
+    padding: 5px;
+    margin: 5px 10px 12px 15px;
+    background-color: #222222;
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__description--proyectos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    }
+
+/* --- CONTACTO --- */
+
+.contenido{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+.contenedor-contacto{
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
+}
+
+.contenedor-contacto > * {
+    padding: 1rem;
+}
+
+.formulario-contacto{
+    background-color: #222222;
+}
+
+.formulario-contacto form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario-contacto form .bloque{
+    grid-column: 1/3;
+}
+
+.formulario-contacto form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.formulario-contacto form button,
+.formulario-contacto form input,
+.formulario-contacto form textarea{
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid #FF99CC;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.formulario-contacto form button{
+    background-color: #FF99CC;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.info-contacto{
+    background-color: #000;
+}
+
+.form__texto-contacto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.info-contacto ul,
+.info-contacto p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.info-contacto ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-contacto ul li{
+    padding: .3rem;
+}
+
+/* media queris */
+
+@media (min-width: 768px){
+    .body-contact{
+        height: 100vh;
+        padding: 0 4rem;
+    }
+
+    .contenedor-contacto{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contenedor-contacto > *{
+        padding: 2rem;
+    }
+
+    .info-contacto ul,
+    .info-contacto p{
+        padding: 1rem;
+        text-align: left;
+        
+    }
+}
+
+@media only screen and (max-width:576px){
+
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyectos__recientes{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section__nosotros{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section__servicios{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section__proyectos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* Comandos:
+    - hacer comentario una seleccion HTML: ctrl + k + c
+*/
+
+
+
+
+
+
+
+
+
