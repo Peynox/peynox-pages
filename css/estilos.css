@@ -353,10 +353,12 @@ footer article div img{
 }
 
 .formulario-contacto form button{
-    background-color: #FF99CC;
+    background-color: #fff;
+    color: #000;
     border: 0;
     text-transform: uppercase;
     padding: 1rem;
+    transition: all 2s;
 }
 
 .info-contacto{
@@ -384,6 +386,105 @@ footer article div img{
 
 .info-contacto ul li{
     padding: .3rem;
+}
+
+/* Animaciones, transiciones y transformaciones */
+
+/* gradiente - index */
+
+.gradiente{
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-family: "helvetica-Roman";
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+
+    width: 100vw;
+    min-width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    border: 5px groove #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+}
+
+/* Transformaciones - pag nosotros */
+
+.cajita-container{
+    display: flex;
+    justify-content: center;
+}
+
+.cajita{
+    font-family: "helvetica-Roman";
+    font-size: 25px;
+    text-align: center;
+    line-height: 150px;
+    color: #000;
+
+    margin: 20px 15px;
+    width: 150px;
+    height: 150px;
+    background-color: #FF99CC;
+}
+
+.traslate{
+    background-color: darkmagenta;
+    transform: translate(-50px, 50px);
+}
+
+.rotate{
+    border-color: blueviolet;
+    transform: rotate(90deg);
+}
+
+.scale{
+    background-color: pink;
+    transform: scale(0.5,0.5) translate(50px,50px) rotate(180deg);
+}
+
+.skew{
+    background-color: magenta;
+    transform: skew(20deg) skewY(500deg);
+}
+
+/* transiciones pag contacto */
+
+.boton:hover{
+    height: 80px;
+    background-color: #FF99CC;
+    color: white;
+}
+
+/* animaciones - index */
+
+.card__image--index{
+    animation-name: animo;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animo {
+    0%{
+        transform: scale(.5);
+        border-radius: 100%;
+    }
+
+    50%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
 }
 
 /* media queris */
