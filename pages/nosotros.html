@@ -5,81 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/icons/icono peynox negro.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/estilos.css">
     <title>Peynox - Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
 
-    <header> 
-        <div class="nav__logo">
-            <a class="logo__enlace" href="../index.html">
-                <img class="logo__image" src="../assets/logos/logo peynox blanco.png" alt="logo-peynox" width="165px"">
-                </a>
-        </div> 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/logos/logo peynox blanco.png" alt="logo-peynox"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                    </li>
 
-        <nav>
-            <ul class="nav__list">
-                <li class="list__links"> <a href="../index.html">Inicio</a> </li>
-                <li class="list__links"> <a href="../pages/nosotros.html">Nosotros</a> </li>
-                <li class="list__links"> <a href="../pages/servicios.html">Servicios</a> </li>
-                <li class="list__links"> <a href="../pages/proyectos.html">Proyectos</a> </li>
-                <li class="list__links"> <a href="../pages/contacto.html">Contacto</a> </li>
-            </ul>   
+                </ul>
+            </div>
+            </div>
         </nav>
-
     </header>
 
     <main class="main-nosotros">
         
         <h1 class="main-title">¿Quienes <span>somos?</span></h1>
 
-        <section class="section__nosotros">
+        <div class="container mb-3">
+            <div class="row g-3">
 
-            <div class="card-nosotros">
-                <h3 class="third-title">Talento que nos hace únicos</h3>
-                <p class="card__description--nosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dicta facilis adipisci laborum eligendi sint voluptatibus saepe laboriosam est quidem animi ipsum! Nisi, non! Ex inventore alias rem dicta quisquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo assumenda nostrum aspernatur consequatur, provident a quis incidunt rerum ut fugit sint molestias officiis nulla vel alias accusamus perferendis ipsa quidem!</p>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../assets/image/talento.png" alt="talento">
+                        
+                        <div class="card-body">
+                        <h2 class="h2-nosotros">Talento que nos hace únicos</h2>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur veritatis ea, magni recusandae corporis libero officia perspiciatis eum fuga culpa, enim facilis dolorum! Unde ducimus deserunt fugiat dicta explicabo at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore doloribus soluta officia temporibus molestias ipsam eaque saepe officiis magnam deserunt accusantium quidem expedita, dolorum aliquid, ipsum aut commodi reprehenderit!.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../assets/image/tecnología.png" alt="tecnologia">
+                        
+                        <div class="card-body">
+                        <h2 class="h2-nosotros">Nos apasiona la tecnología</h2>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur veritatis ea, magni recusandae corporis libero officia perspiciatis eum fuga culpa, enim facilis dolorum! Unde ducimus deserunt fugiat dicta explicabo at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore doloribus soluta officia temporibus molestias ipsam eaque saepe officiis magnam deserunt accusantium quidem expedita, dolorum aliquid, ipsum aut commodi reprehenderit!.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../assets/image/diseño.png" alt="diseño">
+                        
+                        <div class="card-body">
+                        <h2 class="h2-nosotros">Amamos el estilo y  el diseño</h2>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur veritatis ea, magni recusandae corporis libero officia perspiciatis eum fuga culpa, enim facilis dolorum! Unde ducimus deserunt fugiat dicta explicabo at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore doloribus soluta officia temporibus molestias ipsam eaque saepe officiis magnam deserunt accusantium quidem expedita, dolorum aliquid, ipsum aut commodi reprehenderit!.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-            <div class="card-nosotros">
-                <h3 class="third-title">Nos apasiona la tecnología</h3>
-                <p class="card__description--nosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dicta facilis adipisci laborum eligendi sint voluptatibus saepe laboriosam est quidem animi ipsum! Nisi, non! Ex inventore alias rem dicta quisquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum possimus rem asperiores cumque, soluta voluptas, natus, perferendis sint numquam saepe dolorum molestias. Voluptatem eaque minus ducimus repellat voluptate consequatur consequuntur?</p>
-            </div>
-
-            <div class="card-nosotros">
-                <h3 class="third-title">Somos ágiles y flexibles</h3>
-                <p class="card__description--nosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dicta facilis adipisci laborum eligendi sint voluptatibus saepe laboriosam est quidem animi ipsum! Nisi, non! Ex inventore alias rem dicta quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corporis voluptatem fuga eius iusto, voluptatum minima unde adipisci recusandae necessitatibus ducimus sit magni ex, sint blanditiis architecto hic. Mollitia, sit.</p>
-            </div>
-        </section>
-
-        <!-- Tranformaciones -->
-
-        <div class="cajita-container">
-            <div class="cajita traslate">TRASLATE</div>
-            <div class="cajita rotate">ROTATE</div>
-            <div class="cajita scale">SCALE</div>
-            <div class="cajita skew">SKEW</div>
         </div>
-
+        
     </main>
 
     <footer>
         <article class="article__footer">
-            <h4 class="texto-footer">Desarrollado por {Peynox}</h4>
-            <h4 class="texto__footer-mail">hola@peynox.com.ar</h4>
-            <h4 class="texto__footer-telefono">+11 4787-9477</h4>
-
+            <h4 class="h4-footer footer-desarrollo">Desarrollado con <i class="bi bi-heart-fill"></i> por {Peynox}</h4>
+            <h4 class="h4-footer footer-mail">hola@peynox.com.ar</h4>
+            <h4 class="h4-footer footer-tel">+9 4787-9477</h4>
         </article>
 
         <article class="article__redes">
-            <h4 class="texto-footer">Seguinos en nuestras redes</h4>
-            <div>
-                <img class="redes__image" src="../assets/icons/behance icono blanco.png" alt="behance" width="30px">
-                <img class="redes__image" src="../assets/icons/facebook icono blanco.png" alt="facebook" width="30px">
-                <img class="redes__image" src="../assets/icons/instagram icono blanco.png" alt="instagram" width="30px">
-            </div>
+            <ul>
+                <li><i class="bi bi-instagram social__icon"></i></li>
+                <li><i class="bi bi-facebook social__icon"></i></li>
+                <li><i class="bi bi-behance social__icon"></i></i></li>
+                <li><i class="bi bi-github social__icon"></i></li>
+            </ul>
         </article>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 </body>
 </html>

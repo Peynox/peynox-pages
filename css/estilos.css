@@ -25,62 +25,53 @@ html{
     height: 100%;
 }
 
-/* Navbar */
-
 header{
-    display: flex;
-    justify-content: space-between;
+    display: block;
     background-color: #575756;
-    padding: 10px;
-    border-bottom: 1px solid #FF99CC;
+    top: 0;
+    border-bottom: 2px solid #FF99CC;
 }
 
-header div a img{
-    margin-left: 30px;
+/* Navbar*/
+
+.navbar{
+    background-color: #575756;
+    width: 100%;
 }
 
-body header nav{
-    padding: 30px;
-    text-align: center;
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #FF99CC;
+    margin: 5px;
 }
 
-ul{
-    display: flex;
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    margin: 5px;
 }
 
-ul li{
-    list-style: none;
-}
-
-ul li a{
-    font-family: Arial, Helvetica, sans-serif;
+.collapse{
+    flex-grow: initial;
     font-size: 20px;
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-    cursor: pointer;
 }
+
 
 body{
     background-color: #575756;
     width: auto;
-}
-
-main{
     background-image: url(../assets/backrounds/fondo-gris.png);
     background-size: cover;
     background-position: center;
+}
+
+main{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0 1.5rem;
 }
 
 
 /* -- TITULOS --- */
 
-.main-title{
-    padding-top: 2rem;
-    margin-bottom: 3rem;
+h1{
+    margin: 2rem;
     text-align: center;
     font-size: 3rem;
     font-family: "helvetica-Roman";
@@ -93,32 +84,23 @@ span{
     color: #FF99CC;
 }
 
-.title__second--index{
-    margin-bottom: 1.5rem;
-    margin-left: 10px;
-    font-family: "helvetica-Cond";
-    font-size: 2.8rem;
-    color: #FF99CC;
-    text-align: center;
-}
-
-.title__second--servicios{
-    margin: 10px;
-    font-family: "helvetica-Cond";
-    font-size: 2rem;
+h2{
+    font-size: 3rem; 
     color: white;
     text-align: center;
 }
 
-.third-title{
-    margin: 5px 5px;
-    font-family: "helvetica-Cond";
-    font-size: 1.5rem;
-    color:#FF99CC;
+.h2-nosotros{
+    font-size: 2rem;
+    color: #FF99CC;
     text-align: center;
 }
 
-.title__third--contacto{
+.h2-servicios{
+    font-size: 2rem;
+}
+
+h3{
     margin-left: 10px;
     margin-bottom: 10px;
     padding-top: 10px;
@@ -127,182 +109,84 @@ span{
     color:#FF99CC;
 }
 
-/* --- INDEX --- */
-
-.proyectos__recientes{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding-bottom: 2rem;
+h5{
+    font-size: 1.5rem;
+    color:#FF99CC;
 }
 
-.card-index{
-    padding: 5px;
-    margin: 5px 10px 12px 15px;
+/* ---  MAIN --- */
+
+.main__banner{
+    width: 100%;
+    border-bottom: 2px solid #FF99CC;
+}
+
+.card{
+    border: solid 2px rgba(255, 255, 255, 0.463);
+    margin: 20px;
     background-color: #222222;
     box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
 }
 
-.card__image{
-    display: flex;
-    justify-content: center;
-}
-
-.card__image--index{
-    border-radius: 5px;
-}
-
-.card__description--index{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
-}
-
-.slogan{
-    text-align: center;
-    font-family: helvetica-Thin;
-    font-size: larger;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.card__image--index{
-    display: block;
-    margin: 12px 10px;
-}
-
-.proyectos__recientes div button{
-    width: 100%;
-    padding: .7rem;
-    border: none;
-    background: none;
-    outline: none;
-    border-bottom: 1px solid #FF99CC;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-}
-
-.proyectos__recientes div button{
+.btn{
     background-color: #FF99CC;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1rem;
+    color: #222222;
 }
-
 
 /* --- FOOTER --- */
 
 footer{
     width: 100%;
-    background-color: #000;
+    background-color: #222222;
     color: white;
-    padding: 15px 20px;
-    font-family: "helvetica-Roman";
-    font-size: 1.1rem;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
 }
 
-.texto__footer-mail, .texto__footer-telefono{
-    font-family: helvetica-Thin;
+.h4-footer{
+    font-size: 1rem;
 }
 
-.texto__footer-mail{
-    margin-bottom: 0.3rem;
-    margin-top: 6px;
-}
 
-footer article{
+.article__footer{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-footer article div{
+.footer-desarrollo{
+    font-size: 1.1rem;
+}
+
+.footer-mail,
+.footer-tel{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.bi-heart-fill{
+    color: #FF99CC;
+}
+
+footer ul{
+    color: white;
+    font-size: 1.2rem;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.article__redes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__icon{
+    font-size: 2rem;
+    color: #FF99CC;
     margin: 10px;
 }
-
-footer article div img{
-    margin: 1px 8px;
-}
-
-/* --- NOSOTROS --- */
-
-.section__nosotros{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding-bottom: 2rem;
-}
-
-.card-nosotros{
-    padding: 5px;
-    margin: 5px 10px 12px 15px;
-    background-color: #222222;
-    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-}
-
-.card__description--nosotros{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-}
-
-/* --- SERVICIOS --- */
-
-.section__servicios{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding-bottom: 2rem;
-}
-
-
-.card-servicios{
-    padding: 5px;
-    margin: 5px 10px 12px 15px;
-    background-color: #222222;
-    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-}
-
-.card__description--servicios{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
-    }
-
-/* --- PROYECTOS --- */
-
-.section__proyectos{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding-bottom: 2rem;
-}
-
-.card-proyectos{
-    padding: 5px;
-    margin: 5px 10px 12px 15px;
-    background-color: #222222;
-    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-}
-
-.card__description--proyectos{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
-    }
 
 /* --- CONTACTO --- */
 
@@ -314,6 +198,7 @@ footer article div img{
 }
 
 .contenedor-contacto{
+    border: solid 2px rgba(255, 255, 255, 0.463);
     box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
 }
 
@@ -369,6 +254,7 @@ footer article div img{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-style: italic;
+    color: #FF99CC;
 }
 
 .info-contacto ul,
@@ -390,101 +276,11 @@ footer article div img{
 
 /* Animaciones, transiciones y transformaciones */
 
-/* gradiente - index */
-
-.gradiente{
-    padding-top: 2rem;
-    margin-bottom: 3rem;
-    font-size: 3rem;
-    font-family: "helvetica-Roman";
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-
-    width: 100vw;
-    min-width: 90%;
-    height: 300px;
-    margin: 20px auto;
-    border: 5px groove #000;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
-}
-
-/* Transformaciones - pag nosotros */
-
-.cajita-container{
-    display: flex;
-    justify-content: center;
-}
-
-.cajita{
-    font-family: "helvetica-Roman";
-    font-size: 25px;
-    text-align: center;
-    line-height: 150px;
-    color: #000;
-
-    margin: 20px 15px;
-    width: 150px;
-    height: 150px;
-    background-color: #FF99CC;
-}
-
-.traslate{
-    background-color: darkmagenta;
-    transform: translate(-50px, 50px);
-}
-
-.rotate{
-    border-color: blueviolet;
-    transform: rotate(90deg);
-}
-
-.scale{
-    background-color: pink;
-    transform: scale(0.5,0.5) translate(50px,50px) rotate(180deg);
-}
-
-.skew{
-    background-color: magenta;
-    transform: skew(20deg) skewY(500deg);
-}
-
 /* transiciones pag contacto */
 
 .boton:hover{
-    height: 80px;
     background-color: #FF99CC;
     color: white;
-}
-
-/* animaciones - index */
-
-.card__image--index{
-    animation-name: animo;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-    animation-delay: 3s;
-    animation-iteration-count: 1;
-}
-
-@keyframes animo {
-    0%{
-        transform: scale(.5);
-        border-radius: 100%;
-    }
-
-    50%{
-        transform: scale(1);
-    }
-
-    100%{
-        transform: scale(1);
-    }
 }
 
 /* media queris */
@@ -512,33 +308,13 @@ footer article div img{
     }
 }
 
-@media only screen and (max-width:576px){
 
-    header{
-        flex-direction: column;
-        align-items: center;
-    }
+/* 
+    Notas:
+    - bootstrap tiene 12 columnas
 
-    .proyectos__recientes{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .section__nosotros{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .section__servicios{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .section__proyectos{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-
-/* Comandos:
-    - hacer comentario una seleccion HTML: ctrl + k + c
+    Comandos:
+    - hacer comentario una seleccion HTML y Css: ctrl + k + c
 */
 
 
