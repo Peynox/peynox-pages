@@ -1,0 +1,29 @@
+// variables
+
+$back-ground: green;
+$relleno: 20px;
+
+header{
+    background-color: $back-ground;
+    nav{
+        padding: $relleno;
+        ul{
+            list-style-type: none;
+            li{
+                color: $back-ground;
+                a{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+body{
+    background-color: $back-ground;
+    padding: $relleno;
+}
+
+header{
+    background-color: $back-ground;
+}
