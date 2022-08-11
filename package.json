@@ -8,14 +8,6 @@
     "build-css": "node-sass –include-path scss sass/style.scss styles/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Peynox/peynox-git.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Peynox/peynox-git/issues"
-  },
-  "homepage": "https://github.com/Peynox/peynox-git#readme"
+  "license": "ISC"
 }
