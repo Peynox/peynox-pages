@@ -1,0 +1,19 @@
+{
+  "name": "peynox-pages",
+  "version": "1.0.0",
+  "description": "Sitio web de servicios digitales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peynox/peynox-git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peynox/peynox-git/issues"
+  },
+  "homepage": "https://github.com/Peynox/peynox-git#readme"
+}
