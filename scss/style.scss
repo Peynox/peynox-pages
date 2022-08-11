@@ -1,7 +1,19 @@
 // variables
 
 $back-ground: green;
+$color: blue;
 $relleno: 20px;
+$font-weight: 500;
+
+@import "colors";
+
+h1{
+    color: $color-fonts;
+}
+
+p{
+    color: $color-parrafos;
+}
 
 header{
     background-color: $back-ground;
@@ -10,9 +22,9 @@ header{
         ul{
             list-style-type: none;
             li{
-                color: $back-ground;
+                color: $color;
                 a{
-                    font-weight: 500;
+                    font-weight: $font-weight;
                 }
             }
         }

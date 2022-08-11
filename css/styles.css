@@ -1,3 +1,11 @@
+h1 {
+  color: gray;
+}
+
+p {
+  color: white;
+}
+
 header {
   background-color: green;
 }
@@ -8,7 +16,7 @@ header nav ul {
   list-style-type: none;
 }
 header nav ul li {
-  color: green;
+  color: blue;
 }
 header nav ul li a {
   font-weight: 500;
