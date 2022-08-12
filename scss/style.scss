@@ -6,6 +6,7 @@ $relleno: 20px;
 $font-weight: 500;
 
 @import "colors";
+@import "fonts";
 
 h1{
     color: $color-fonts;
@@ -13,6 +14,7 @@ h1{
 
 p{
     color: $color-parrafos;
+    font-family: $font-principal;
 }
 
 header{
@@ -24,6 +26,9 @@ header{
             li{
                 color: $color;
                 a{
+                    &:hover{
+                        font-size: 30px;
+                    }
                     font-weight: $font-weight;
                 }
             }
