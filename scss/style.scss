@@ -1,46 +1,378 @@
-// variables
-
-$back-ground: green;
-$color: blue;
-$relleno: 20px;
-$font-weight: 500;
-
 @import "colors";
 @import "fonts";
 
-h1{
-    color: $color-fonts;
+@font-face {
+    font-family: "helvetica-Roman";
+    src: url(../assets/fonts/HelveticaInseratLTStd-Roman.otf);
 }
 
-p{
-    color: $color-parrafos;
-    font-family: $font-principal;
+@font-face {
+    font-family: "helvetica-Thin";
+    src: url(../assets/fonts/Helvetica-Thin.otf);
+}
+
+@font-face {
+    font-family: "helvetica-Cond";
+    src: url(../assets/fonts/HelveticaLTStd-Cond.otf);
+}
+
+// selector universal
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header{
-    background-color: $back-ground;
-    nav{
-        padding: $relleno;
-        ul{
-            list-style-type: none;
-            li{
-                color: $color;
-                a{
-                    &:hover{
-                        font-size: 30px;
-                    }
-                    font-weight: $font-weight;
-                }
+    background-color: $color-background;
+    margin: 0;
+    border-bottom: 2px solid $color-borde;
+        nav{
+            background-color: $color-background;
+            width: 100%;
+        }
+}
+
+// navbar
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: $color-link-active;
+    margin: 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $color-link;
+    margin: 5px;
+}
+
+.collapse{
+    flex-grow: initial;
+    font-size: 20px;
+}
+
+
+body{
+    background-color: $color-background;
+    width: auto;
+    background-image: url(../assets/backrounds/fondo-gris.png);
+    background-size: cover;
+    background-position: center;
+        main{
+            @if ($color-text == white) {
+                color: white;
+            } @else if ($color-text == red) {
+                color: red;
+            } @else{
+                color: blue;
             }
         }
+}
+
+// buble for - ciclo exac
+
+@for $i from 1 to 6{
+    // interpolacion
+    h#{$i}{
+        font-size: $i * 1rem;
     }
 }
 
-body{
-    background-color: $back-ground;
-    padding: $relleno;
+// bucle each
+
+$lista1: purple, violet, pink, black;
+
+@each $color in $lista1 {
+    // interpocalcion
+    .#{$color}{
+        background-color: $color;
+    }
 }
 
-header{
-    background-color: $back-ground;
+// titulos
+
+h1{
+    margin: 2rem;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: "helvetica-Roman";
+    color: $color-h1;
+    text-align: center;
+    text-transform: uppercase;
+        span{
+            color: $color-span;
+        }
 }
+
+h2{
+    font-size: 3rem; 
+    color: $color-h2;
+    text-align: center;
+}
+
+.h2-nosotros{
+    font-size: 2rem;
+    color: $color-h2-nosotros;
+    text-align: center;
+}
+
+.h2-servicios{
+    font-size: 2rem;
+}
+
+h3{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-family: "helvetica-Cond";
+    font-size: 3rem;
+    color: $color-h3;
+}
+
+h5{
+    font-size: 1.5rem;
+    color: $color-h5;
+}
+
+//  main 
+
+.main__banner{
+    width: 100%;
+    border-bottom: 2px solid $color-borde;
+}
+
+// maps
+
+$estilos-card: (
+    margin: 20px,
+    background-color: $color-background-card,
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3),
+);
+
+.card{
+    margin: map-get($map: $estilos-card, $key: margin);
+    background-color: map-get($map: $estilos-card, $key: background-color);
+    box-shadow: map-get($map: $estilos-card, $key: box-shadow);
+}
+
+
+.btn{
+    background-color: $color-background-btn;
+    color: $color-btn;
+}
+
+// footer 
+
+footer{
+    width: 100%;
+    background-color: $color-background-footer;
+    color: $color-text;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+        ul{
+            color: $color-text;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+}
+
+.h4-footer{
+    font-size: 1rem;
+}
+
+
+.article__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-desarrollo{
+    font-size: 1.1rem;
+}
+
+// extend
+
+.footer-mail{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.footer-tel{
+    @extend .footer-mail;
+}
+
+.bi-heart-fill{
+    color: $color-background-icons;
+}
+
+.article__redes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__icon{
+    font-size: 2rem;
+    color: $color-background-icons;
+    margin: 10px;
+}
+
+// proyectos
+
+.card-proyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.carousel-proyectos{
+    width: 80%;
+    height: 80%;
+    margin: 2rem;
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
+}
+
+// mixin
+
+@mixin crearbordes(){
+    border: solid 2px rgba(255, 255, 255, 0.463);
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
+}
+
+.texto-proyectos{
+    width: 80%;
+    height: 80%;
+    margin: 2rem;
+    padding: 2rem;
+    @include crearbordes();
+    border-radius: 6px;
+    background-color: $color-background-proyectos;
+}
+
+.p-proyectos{
+    padding-top: 1rem;
+}
+
+// contacto
+
+.contenido{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+.contenedor-contacto{
+    @include crearbordes()
+}
+
+.contenedor-contacto > * {
+    padding: 1rem;
+}
+
+.formulario-contacto{
+    background-color: $color-background-form;
+}
+
+.formulario-contacto form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario-contacto form .bloque{
+    grid-column: 1/3;
+}
+
+.formulario-contacto form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.formulario-contacto form button,
+.formulario-contacto form input,
+.formulario-contacto form textarea{
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid $color-borde;
+    font-family: $font-helvetica;
+    color: $color-text;
+}
+
+.formulario-contacto form button{
+    background-color: $color-background-form-btn;
+    color: #000;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1rem;
+    transition: all 2s;
+}
+
+.info-contacto{
+    background-color: #000;
+}
+
+.form__texto-contacto{
+    font-family: $font-helvetica;
+    font-weight: bold;
+    font-style: italic;
+    color: #FF99CC;
+}
+
+
+.info-contacto ul,
+.info-contacto p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.info-contacto ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-contacto ul li{
+    padding: .3rem;
+}
+
+// animaciones, transiciones y transformaciones
+
+.boton:hover{
+    background-color: $color-background-btn-hover;
+    color: $color-text;
+}
+
+// media queris
+
+@media (min-width: 768px){
+    .body-contact{
+        height: 100vh;
+        padding: 0 4rem;
+    }
+
+    .contenedor-contacto{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contenedor-contacto > *{
+        padding: 2rem;
+    }
+
+    .info-contacto ul,
+    .info-contacto p{
+        padding: 1rem;
+        text-align: left;
+        
+    }
+}
+
+
