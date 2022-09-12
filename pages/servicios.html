@@ -10,123 +10,114 @@
     <title>Peynox - Servicios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
-    <header> 
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../assets/logos/logo peynox blanco.png" alt="logo-peynox"></a>
+                <h3>{Peynox}</h3>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../pages/servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../pages/contacto.html">Contacto</a>
-                    </li>
-
-                </ul>
-            </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-    </header>
-    
+    </header> 
 
+    <main class="main-servicios">
+        <h1 class="h1-servicios">¿Qué podemos <span>ofrecerte?</span></h1>
+        <p class="p-servicios">Contamos con un amplio catálogo de servicios <br>para desarrollar tu <span>presencia online</span></p>
 
-    <main>
+        <div class="contenedor-servicios">
+            <article class="container-servicios">
 
-        <h1>¿Qué <span>ofrecemos?</span></h1>
-
-        <h2 class="h2-servicios">Contamos con una amplia gama de servicios especializados para tu marca</h2>
-
-        <div class="card mb-3" style="max-width: 100%;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="../assets/image/uxui-01.png">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                    <h5 class="card-title">Desarrollo Ux-Ui</h5>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique a maiores debitis! Earum explicabo nostrum maxime, iusto officiis eaque velit dolor labore illo est. Eius doloremque itaque expedita voluptate perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eum illo. Ab dolores minus veniam! Autem natus expedita sunt id aperiam cupiditate eos. Perspiciatis, in ex error excepturi beatae enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur perspiciatis non aperiam, dignissimos culpa ad consequuntur qui voluptates a vero, corrupti, iste laudantium distinctio quo maxime doloremque ex error!</p>
+                <div class="card-servicios">
+                    <div class="imgbox-servicios" data-text="Diseño">
+                        <img src="/assets/icons/diseno-blanco.png" alt="diseno-grafico" width="100px" height="100px">
+                    </div>
+                    <div class="content-servicios">
+                        <div>
+                            <h3 class="h3-servicios">Diseño Gráfico</h3>
+                            <p>El diseño gráfico te ayuda a conectar con tus clientes, aportándoles valor y haciendo que se sientan más cerca de tu marca. Si no quieres que tu empresa pase desapercibida, es el momento de darle un impulso.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="card mb-3" style="max-width: 100%;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="../assets/image/branding-01.png">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                    <h5 class="card-title">Branding</h5>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique a maiores debitis! Earum explicabo nostrum maxime, iusto officiis eaque velit dolor labore illo est. Eius doloremque itaque expedita voluptate perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque, perspiciatis, voluptatem dignissimos fugit soluta iure laborum nihil hic nam est illo ipsa officiis! Quos praesentium rem error similique in!</p>
+                <div class="card-servicios">
+                    <div class="imgbox-servicios" data-text="Brand">
+                        <img src="/assets/icons/branding-blanco.png" alt="branding" width="100px" height="100px">
+                    </div>
+                    <div class="content-servicios">
+                        <div>
+                            <h3 class="h3-servicios">Branding</h3>
+                            <p>La personalidad de tu marca. Si contamos con un branding atractivo y coherente, podremos atraer y retener a nuestros clientes, entregando un producto que siempre esté alineado con lo que promete la marca.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="card mb-3" style="max-width: 100%;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="../assets/image/grafico-01.png">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                    <h5 class="card-title">Diseño gráfico</h5>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique a maiores debitis! Earum explicabo nostrum maxime, iusto officiis eaque velit dolor labore illo est. Eius doloremque itaque expedita voluptate perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, nobis consequatur? Corrupti, iste quis ab assumenda amet quisquam culpa natus expedita accusamus repudiandae odit officiis accusantium magnam, nobis, dignissimos nostrum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint qui architecto fugit nobis labore consequuntur beatae, quisquam soluta vitae iusto id sit natus perferendis molestias impedit omnis necessitatibus ea quibusdam!</p>
+                <div class="card-servicios">
+                    <div class="imgbox-servicios" data-text="Web">
+                        <img src="/assets/icons/web-blanco.png" alt="desarrollo-web" width="100px" height="100px">
+                    </div>
+                    <div class="content-servicios">
+                        <div>
+                            <h3 class="h3-servicios">Desarrollo Web</h3>
+                            <p>Tu imagen corporativa y tu página web son la cara visible de tu marca. El tener una web te brinda la oportunidad de estar presente en cualquier momento y lugar para tus clientes.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="card mb-3" style="max-width: 100%;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="../assets/image/web-01.png">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                    <h5 class="card-title">Desarrollo Web</h5>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique a maiores debitis! Earum explicabo nostrum maxime, iusto officiis eaque velit dolor labore illo est. Eius doloremque itaque expedita voluptate perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus blanditiis aperiam odit maiores animi voluptates modi, repudiandae nemo laboriosam architecto voluptas tenetur sapiente neque alias ex. Reiciendis recusandae atque doloremque?</p>
+                <div class="card-servicios">
+                    <div class="imgbox-servicios" data-text="Ux-Ui">
+                        <img src="/assets/icons/ux-blanco.png" alt="ux-ui" width="100px" height="100px">
+                    </div>
+                    <div class="content-servicios">
+                        <div>
+                            <h3 class="h3-servicios">Desarrollo Ux-Ui</h3>
+                            <p>Aporta valor y coherencia a las acciones comunicativas de la compañía, ofrece una imagen corporativa ajustada a las necesidades del cliente y mejora la experiencia del usuario.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
-
     </main>
 
     <footer>
-        <article class="article__footer">
-            <h4 class="h4-footer footer-desarrollo">Desarrollado con <i class="bi bi-heart-fill"></i> por {Peynox}</h4>
-            <h4 class="h4-footer footer-mail">hola@peynox.com.ar</h4>
-            <h4 class="h4-footer footer-tel">+9 4787-9477</h4>
-        </article>
-
-        <article class="article__redes">
-            <ul>
-                <li><i class="bi bi-instagram social__icon"></i></li>
-                <li><i class="bi bi-facebook social__icon"></i></li>
-                <li><i class="bi bi-behance social__icon"></i></i></li>
-                <li><i class="bi bi-github social__icon"></i></li>
+        <div class="footer-container">
+            <h3>{Peynox}</h3>
+            <p>Agencia creativa especializada en el desarrollo y diseño de marcas <br>en el mundo digital con las mejores tecnologías del mercado.</p>
+            <ul class="social-list">
+                <li><a href="#"><i class="bi bi-instagram social__icon"></i></a></li>
+                <li><a href="#"><i class="bi bi-facebook social__icon"></i></a></li>
+                <li><a href="#"><i class="bi bi-behance social__icon"></i></a></li>
+                <li><a href="#"><i class="bi bi-github social__icon"></i></a></li>
             </ul>
-        </article>
+        </div>
+        <div class="footer-content">
+            <p>
+                Copyright &copy;2022 Desarrollado con <i class="bi bi-heart-fill"></i> por {Peynox}
+            </p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

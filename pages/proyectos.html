@@ -15,133 +15,86 @@
 
 <body>
 
-    <header> 
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../assets/logos/logo peynox blanco.png" alt="logo-peynox"></a>
+                <h3>{Peynox}</h3>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../pages/contacto.html">Contacto</a>
-                    </li>
-
-                </ul>
-            </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-    </header>
+    </header> 
 
-    <main>
-        
-        <h1 class="main-title">Nuestro <span>portafolio</span></h1>
+    <main class="main-proyectos">
+        <h1 class="h1-proyectos">Nuestros <span>proyectos</span></h1>
+        <p class="p-proyectos">Aquí podrás encontrar y conocer nuestros <br><span>trabajos más recientes</span></p>
 
-        <h2>Conoce a profundidad nuestros trabajos</h2>
+        <section class="cards-proyectos">
+            <div>
+                <div class="card-proyecto">
+                    <img src="/assets/image/proyecto branding.png" alt="branding">
+                    <h3>Northway</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corporis ducimus cum eveniet quisquam enim possimus. Quas, repellendus? Voluptate, fugit.</p>
+                    <button href="#">Conocer más</button>
+                </div>
 
-        <div class="card-proyectos">
-            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-proyectos" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../assets/image/proyecto branding.png" class="d-block w-100" alt="Northway">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/image/proyecto branding 2.png" class="d-block w-100" alt="Northway">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/image/proyecto branding 3.png" class="d-block w-100" alt="Northway">
-                    </div>
+                <div class="card-proyecto">
+                    <img src="/assets/image/proyecto ux-ui.png" alt="ux-ui">
+                    <h3>Gilmers</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corporis ducimus cum eveniet quisquam enim possimus. Quas, repellendus? Voluptate, fugit.</p>
+                    <button href="#">Conocer más</button>
+                </div>
+
+                <div class="card-proyecto">
+                    <img src="/assets/image/proyecto diseño grafico.png" alt="diseno-grafico">
+                    <h3>Animate</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corporis ducimus cum eveniet quisquam enim possimus. Quas, repellendus? Voluptate, fugit.</p>
+                    <button href="#">Conocer más</button>
                 </div>
             </div>
+        </section>
 
-            <div class="texto-proyectos">
-                <h3>Northway</h3>
-
-                <p class="p-proyectos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sequi perferendis minus ipsam. Et non eos quos animi nam alias repellendus ut harum, neque accusamus. Sit deleniti corrupti blanditiis asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem itaque praesentium numquam alias exercitationem, facilis, placeat provident illum velit aut nostrum totam at voluptatum a cum, obcaecati fugit quidem magni!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sequi perferendis minus ipsam.
-                </p>
-            </div>
-        </div>
-
-        <div class="card-proyectos">
-            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-proyectos" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../assets/image/proyecto ux-ui.png" class="d-block w-100" alt="Girlmers">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/image/proyecto ux-ui 2.png" class="d-block w-100" alt="Girlmers">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/image/proyecto ux-ui 3.png" class="d-block w-100" alt="Girlmers">
-                    </div>
-                </div>
-            </div>
-
-            <div class="texto-proyectos">
-                <h3>Girlmers</h3>
-
-                <p class="p-proyectos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sequi perferendis minus ipsam. Et non eos quos animi nam alias repellendus ut harum, neque accusamus. Sit deleniti corrupti blanditiis asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem itaque praesentium numquam alias exercitationem, facilis, placeat provident illum velit aut nostrum totam at voluptatum a cum, obcaecati fugit quidem magni!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sequi perferendis minus ipsam.
-                </p>
-            </div>
-        </div>
-
-        <div class="card-proyectos">
-            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-proyectos" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../assets/image/proyecto diseño grafico.png" class="d-block w-100" alt="Animate">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/image/proyecto diseño grafico 2.png" class="d-block w-100" alt="Animate">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/image/proyecto diseño grafico 3.png" class="d-block w-100" alt="Animate">
-                    </div>
-                </div>
-            </div>
-
-            <div class="texto-proyectos">
-                <h3>Animate</h3>
-
-                <p class="p-proyectos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sequi perferendis minus ipsam. Et non eos quos animi nam alias repellendus ut harum, neque accusamus. Sit deleniti corrupti blanditiis asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem itaque praesentium numquam alias exercitationem, facilis, placeat provident illum velit aut nostrum totam at voluptatum a cum, obcaecati fugit quidem magni!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sequi perferendis minus ipsam.
-                </p>
-            </div>
-        </div>
-
+        <section>
+            
+        </section>
     </main>
 
-
     <footer>
-        <article class="article__footer">
-            <h4 class="h4-footer footer-desarrollo">Desarrollado con <i class="bi bi-heart-fill"></i> por {Peynox}</h4>
-            <h4 class="h4-footer footer-mail">hola@peynox.com.ar</h4>
-            <h4 class="h4-footer footer-tel">+9 4787-9477</h4>
-        </article>
-
-        <article class="article__redes">
-            <ul>
-                <li><i class="bi bi-instagram social__icon"></i></li>
-                <li><i class="bi bi-facebook social__icon"></i></li>
-                <li><i class="bi bi-behance social__icon"></i></i></li>
-                <li><i class="bi bi-github social__icon"></i></li>
+        <div class="footer-container">
+            <h3>{Peynox}</h3>
+            <p>Agencia creativa especializada en el desarrollo y diseño de marcas <br>en el mundo digital con las mejores tecnologías del mercado.</p>
+            <ul class="social-list">
+                <li><a href="#"><i class="bi bi-instagram social__icon"></i></a></li>
+                <li><a href="#"><i class="bi bi-facebook social__icon"></i></a></li>
+                <li><a href="#"><i class="bi bi-behance social__icon"></i></a></li>
+                <li><a href="#"><i class="bi bi-github social__icon"></i></a></li>
             </ul>
-        </article>
+        </div>
+        <div class="footer-content">
+            <p>
+                Copyright &copy;2022 Desarrollado con <i class="bi bi-heart-fill"></i> por {Peynox}
+            </p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
